@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Mobile Number" />
+
+
+    <TextView
+        android:id="@+id/tvMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mobile Number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOperator"
+        android:layout_toLeftOf="@+id/tv1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Network Type" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvOperator"
+        android:layout_centerHorizontal="true"
+        android:text="->"/>
+    <TextView
+        android:id="@+id/tvNetworkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:layout_below="@+id/tvOperator"
+        android:text="Operator"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMobileNumber"
+        android:layout_toLeftOf="@+id/tv2"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Operator" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvMobileNumber"
+        android:layout_centerHorizontal="true"
+        android:text="->"/>
+    <TextView
+        android:id="@+id/tvOperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_below="@+id/tvMobileNumber"
+        android:text="Operator"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNetworkType"
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimary"
+        android:text="OK"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteY="288dp" />
+
+</RelativeLayout>
